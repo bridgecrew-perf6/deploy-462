@@ -1,4 +1,4 @@
-name: Build S3
+name: Build
 on:
   push:
       branches:
