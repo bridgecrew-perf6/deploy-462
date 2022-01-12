@@ -17,7 +17,7 @@ jobs:
         run: |
           aws s3 cp --recursive --region ap-northeast-1 ./ s3://test.fujii3.net
 # CloudFrontのキャッシュクリア
-      - name: Clear cache in CloudFront
+      - name: Clear cache
         uses: chetan/invalidate-cloudfront-action@v1.2
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
